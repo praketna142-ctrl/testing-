@@ -1,7 +1,7 @@
 {
-  "private": true,
-  "type": "module",
-  "dependencies": {
-    "@vercel/speed-insights": "^2.1.0"
+  "name": "pawport",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.mjs"
   }
 }
