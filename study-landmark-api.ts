@@ -43,15 +43,15 @@ const studyGuideSchema = {
         type: "OBJECT",
         required: ["id", "difficulty", "question", "options", "correctAnswerIndex", "snackReward"],
         properties: {
-          id: { type: "INTEGER", enum: [1, 2, 3, 4, 5] },
+          id: { type: "INTEGER" },
           difficulty: { type: "STRING", enum: difficulties },
           question: { type: "STRING" },
           options: {
             type: "ARRAY",
             items: { type: "STRING" }
           },
-          correctAnswerIndex: { type: "INTEGER", enum: [0, 1, 2, 3] },
-          snackReward: { type: "INTEGER", enum: rewards }
+          correctAnswerIndex: { type: "INTEGER" },
+          snackReward: { type: "INTEGER" }
         }
       }
     }
